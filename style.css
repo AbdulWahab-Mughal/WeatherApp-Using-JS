@@ -1,0 +1,411 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:url(./images/conatiner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.container {
+  background: radial-gradient(white,rgb(233, 183, 90));
+  width: 30%;
+  padding: 28px;
+  border-radius: 13px;
+  height: min-content;
+}
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  height: min-content;
+  width: 100%;
+  align-items: center;
+}
+.searchBar input {
+  color: #000;
+  background-color: rgb(204, 194, 194);
+  width: 85%;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.searchBar input::placeholder {
+  color: #000;
+  text-transform: capitalize;
+}
+.searchBar button {
+  color: #000;
+  background-color: rgb(204, 194, 194);
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.searchBar button:hover {
+  background: rgb(161, 142, 142);
+}
+.city {
+  margin-top: 10px;
+  border-top: 1px solid grey;
+  font-style: italic;
+  font-size: medium;
+  text-transform: capitalize;
+}
+#country {
+  font-style: italic;
+  font-size: medium;
+  font-weight: 600;
+}
+.sectionBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+.images {
+  width: 45%;
+}
+
+.weatherBox {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.temperature {
+  position: relative;
+  font-size: 25px;
+  font-weight: 800px;
+}
+.temperature sup {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+}
+.description {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 800px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.sunrise,
+.sunset {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sunrise span{
+
+  font-size: 15px;
+  font-weight: 500;
+}
+.sunset span {
+  font-size: 15px;
+  font-weight: 500;
+}
+.sunrise p,
+.sunset p {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.details i {
+  font-size: 20px;
+  font-weight: 800px;
+}
+.humidity,
+.wind {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wind-details {
+  margin-left: 125px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px 5px;
+}
+
+.humidity-details {
+  margin-right: 125px;
+  flex-direction: column;
+  display: flex;
+
+  margin: 0px 5px;
+}
+
+.wind-details,
+.humidity-details .para {
+  font-size: 15px;
+  font-weight: 800px;
+}
+.wind-details,
+.humidity-details span {
+  font-size: 15px;
+  font-weight: 800px;
+}
+
+
+@media (max-width: 1920px) {
+  .container {
+    width: 30%;
+    padding: 23px;
+    border-radius: 13px;
+  }
+  .searchBar input {
+    width: 84%;
+    padding: 14px;
+    border-radius: 11px;
+    font-size: 18px;
+  }
+  .searchBar button {
+    padding: 15px;
+    border-radius: 13px;
+    font-size: 19.5px;
+  }
+  .city {
+    font-size: 18px;
+  }
+  
+  .images {
+    width: 65%;
+  }
+  .temperature {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .temperature sup {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .details i {
+    font-size: 19px;
+  }
+  .wind-details,
+  .humidity-details .para {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .wind-details,
+  .humidity-details span {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .wind-details {
+    margin-right: 10px;
+  }
+  .humidity-details {
+    margin-left: 10px;
+  }
+  .sunrise,
+  .sunset {
+    margin: 5px 5px;
+    
+  }
+  
+  .sunrise span{
+  
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .sunset span {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .sunrise p,
+  .sunset p {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 48%;
+    padding: 23px;
+    border-radius: 13px;
+  }
+  .searchBar input {
+    width: 82%;
+    padding: 12px;
+    border-radius: 11px;
+    font-size: 16px;
+  }
+  .searchBar button {
+    padding: 13px;
+    border-radius: 13px;
+    font-size: 18px;
+  }
+  .city {
+    font-size: 16px;
+  }
+  #country {
+    font-size: 16px;
+  }
+  .images {
+    width: 65%;
+  }
+  .temperature {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .temperature sup {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .details i {
+    font-size: 19px;
+  }
+  .wind-details,
+  .humidity-details .para {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .wind-details,
+  .humidity-details span {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .wind-details {
+    margin-right: 10px;
+  }
+  .humidity-details {
+    margin-left: 10px;
+  }
+  .sunrise,
+  .sunset {
+    margin: 5px 5px;
+    
+  }
+  
+  .sunrise span{
+  
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .sunset span {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .sunrise p,
+  .sunset p {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    width: 69%;
+    padding: 19px;
+    border-radius: 11px;
+  }
+  .searchBar input {
+    width: 77%;
+    padding: 8px;
+    border-radius: 11px;
+    font-size: 13px;
+  }
+  .searchBar button {
+    padding: 9px;
+    border-radius: 11px;
+    font-size: 16px;
+  }
+  .city {
+    font-size: 13px;
+  }
+  #country {
+    font-size: 13px;
+  }
+  .images {
+    width: 60%;
+  }
+  .temperature {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  .temperature sup {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .description {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .details i {
+    font-size: 14px;
+  }
+  .wind-details,
+  .humidity-details .para {
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .wind-details,
+  .humidity-details span {
+    font-size: 10px;
+    font-weight: 800;
+  }
+  .wind-details {
+    margin-left: 4px;
+  }
+  .humidity-details {
+    margin-right: 2px;
+  }
+  .sunrise,
+  .sunset {
+    margin: 5px 5px;
+    
+  }
+  
+  .sunrise span{
+  
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .sunset span {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .sunrise p,
+  .sunset p {
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
