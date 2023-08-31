@@ -1,1 +1,1 @@
-https://superb-horse-c74a33.netlify.app/
+https://my-weather-app-rapidapi.netlify.app/
